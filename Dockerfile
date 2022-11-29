@@ -22,8 +22,8 @@ COPY . .
 EXPOSE 8000
 
 # Crating user with limited lavrage to preventing any possible penetration
-#RUN addgroup -S app && adduser -S -G app app
-#USER app
+RUN addgroup -S app && adduser -S -G app app
+USER app
 
 # Define an Entrypoint
 CMD ["python", "manage.py", "runserver"]
