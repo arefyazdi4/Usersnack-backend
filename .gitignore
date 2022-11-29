@@ -133,3 +133,4 @@ dmypy.json
 .idea/
 .vscode/
 /usersnack/.env
+!/usersnack/.env.example
