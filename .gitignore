@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+#______spacific to this project________#
+.idea/
+.vscode/
+/usersnack/.env
