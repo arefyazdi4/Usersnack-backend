@@ -46,7 +46,7 @@ urlpatterns = [
     # admin site ulr
     path('admin/', admin.site.urls),
     # local app url
-    # path('api/', include('api.urls')),
+    path('api/', include('api.urls')),
     # third-party urls
     path('swagger.json/', schema_view.without_ui(cache_timeout=0),
          name='schema-json'),

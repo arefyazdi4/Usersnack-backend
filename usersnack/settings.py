@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     # Local
     # this app specific
     # independent
-    # 'api',
+    'api',
 ]
 
 MIDDLEWARE = [
