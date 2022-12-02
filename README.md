@@ -23,7 +23,8 @@ Tech stacks of this project:
 - rename usersnack/.env.example to usersnack/.env
 - `docker exec -it usersnack sh`
 - `python manage.py migrate `
-- `python manage.py createadmin `
+  #### populating database
+- `python manage.py seed_db`  
 
 ## 5. Now you can see Browsable Api
 

@@ -4,12 +4,18 @@ from rest_framework import serializers
 from .models import Customer, Order, OrderItem, Product, Pizza, Incredient
 
 
+class IncredientSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Incredient
+        fields = ['name']
+
+
 class PizzaSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = Product
-        fields = ['id', 'name', 'incredients',
-                  'unit_price', 'img']
+        model = Pizza
+        fields = ['id', 'name', 'incredients', 'unit_price', 'img']
+    # incredients = IncredientSerializer(many=True, read_only=True)
 
 
 class CustomerSerializer(serializers.ModelSerializer):
